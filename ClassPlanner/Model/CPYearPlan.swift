@@ -7,7 +7,7 @@
 
 import Foundation
 
-@Observable class CPYearPlan: Identifiable {
+class CPYearPlan: Identifiable {
     var year: Int
     var semesters: [CPSemester]
     
@@ -17,7 +17,7 @@ import Foundation
     }
     
     func hasSemester(for semesterType: CPSemester.CPSemesterType) -> Bool {
-        //TODO: 3A. IMPLEMENT USING A CLOSURE
+        // TODO: 3A. IMPLEMENT USING A CLOSURE
         for semester in semesters {
             if semester.type == semesterType {
                 return true
@@ -27,7 +27,7 @@ import Foundation
     }
     
     func getSemester(for semesterType: CPSemester.CPSemesterType) -> CPSemester? {
-        //TODO: 3B. IMPLEMENT USING A CLOSURE
+        // TODO: 3B. IMPLEMENT USING A CLOSURE
         for semester in semesters {
             if semester.type == semesterType {
                 return semester
@@ -37,7 +37,7 @@ import Foundation
     }
 }
 
-@Observable class CPSemester: Identifiable, Equatable {
+class CPSemester: Identifiable, Equatable {
     static func == (lhs: CPSemester, rhs: CPSemester) -> Bool {
         lhs.id == rhs.id
     }
@@ -58,7 +58,7 @@ import Foundation
     }
 }
 
-@Observable class CPClass: Identifiable {
+class CPClass: Identifiable {
     var id = UUID()
     var name: String
     var instructors: [String]

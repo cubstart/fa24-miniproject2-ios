@@ -70,7 +70,7 @@ struct SelectSemesterView: View {
     }
 }
 
-//MARK: - SelectSemesterButton 
+// MARK: - SelectSemesterButton
 struct SelectSemesterButton: View {
     @Binding var selectedSemester: CPSemester?
     var yearPlan: CPYearPlan
@@ -86,7 +86,7 @@ struct SelectSemesterButton: View {
         }) {
             Text("\(semesterType == .fall ? "FALL" : "SPRING")")
                 .padding()
-                //TODO: - THEME COLOR SHOULD BE HERE
+                // TODO: - THEME COLOR SHOULD BE HERE
                 .background(currentSemester == selectedSemester ? Color.blue.opacity(0.2) : Color.clear)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
         }

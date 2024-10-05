@@ -159,7 +159,7 @@ struct CPTextField: View {
             .overlay(
                 TextField("", text: $newText)
                     .bold()
-                //TODO: - THEME COLOR SHOULD BE HERE
+                // TODO: - THEME COLOR SHOULD BE HERE
                     .foregroundStyle(Color.blue)
                     .padding()
             )

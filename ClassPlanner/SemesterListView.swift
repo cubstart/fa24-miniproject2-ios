@@ -21,7 +21,7 @@ struct SemesterListView: View {
     }
 }
 
-//MARK: - SemesterDisclosureGroup
+// MARK: - SemesterDisclosureGroup
 struct SemesterDisclosureGroup: View {
     @State private var isExpanded = true
     var semester: CPSemester
@@ -52,7 +52,7 @@ struct SemesterDisclosureGroup: View {
     }
 }
 
-//MARK: - ClassRowView
+// MARK: - ClassRowView
 struct ClassRowView: View {
     var semester: CPSemester
     var cpClass: CPClass
@@ -67,7 +67,7 @@ struct ClassRowView: View {
                         .bold()
                 Text(cpClass.domain)
                     .font(.caption)
-                //TODO: - THEME COLOR SHOULD BE HERE
+                // TODO: - THEME COLOR SHOULD BE HERE
                     .foregroundStyle(Color.blue)
                 Text(cpClass.getInstructorsString)
                         .foregroundStyle(.secondary)

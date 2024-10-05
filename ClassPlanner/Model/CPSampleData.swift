@@ -7,7 +7,7 @@
 
 import Foundation
 
-//MARK: - DO NOT MODIFY ------>
+// MARK: - DO NOT MODIFY ------>
 struct CPSampleData {
     static let yearPlans = [
         CPYearPlan(year: 2024, semesters: [
@@ -44,4 +44,4 @@ struct CPSampleData {
         ])
     ])
 }
-//MARK: <------ DO NOT MODIFY
+// MARK: <------ DO NOT MODIFY
